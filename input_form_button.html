@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Interazioni con utente</title>
+ </head>
+ <body>
+     <h1>Interazioni con l'utente</h1>
+     <h4>Compila il seguente form con i tuoi dati </h4>
+         <form onsubmit="alert('Registrazione avvenuta con successo!')">
+         <div>
+                <input type="text" name="Nome" placeholder="inserisci il tuo nome" />
+                <input type="text" name="Cognome" placeholder="inserisci il tuo cognome" />
+         </div>
+         <div>
+             <input type="date" name="Data di nascita" />
+         </div>
+         <div>
+             <input type="number" name="Cellulare" placeholder="inserisci il tuo numero di telefono" />
+         </div>
+         <div>
+             <input type="email" name="Email" placeholder="inserisci qua la tua email"/>
+             <input type="password" name="Password" placeholder="inserisci qua la tua password" />
+         </div>
+         <h4>Seleziona i generi musicali di tuo gradimento</h4>
+         <div>
+              <ul>
+                 <li><a>pop</a><input type="checkbox" name="Pop" value="Pop"/></li>
+                 <li><a>Rock</a> <input type="checkbox" name="Rock"/></li>
+                 <li><a>Metal</a><input type="checkbox" name="Metal" value="Metal"/></li>
+                 <li><a>House</a><input type="checkbox" name="House" value="House"/></li>
+                 <li><a>Jazz</a><input type="checkbox" name="Jazz" value="Jazz"/></li>
+                 <li><a>Techno</a><input type="checkbox" name="Techno" value="Techno"/></li>
+                 <li><a>Latin</a><input type="checkbox" name="Latin" value="Latin"/></li>
+             </ul>
+         </div>
+         <h4>Termini e condizioni</h4>
+             <div>
+                 <input type="radio" Name="Accetto" value="Accetto"/> Accetto i termini e le condizioni
+                 <input type="radio" name="Non accetto" value="Non accetto"/> Non accetto i termini e le condizioni
+             </div>
+         <button  type="submit">Invia registrazione</button> 
+        </form>
+ </body>
+</html>
